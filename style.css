@@ -1,0 +1,334 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: 'Segoe UI', Arial, sans-serif;
+  background-color: #fdf7fc;
+  color: #333;
+}
+header {
+  background: linear-gradient(90deg, #e8b6d0 0%, #f6eadf 70%, #d3c7ff 100%);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px 32px;
+  border-bottom: 2px solid #d8c1d3;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+.logo img {
+  width: 72px;
+  height: 72px;
+  border-radius: 22px;
+  background: #f3e3f5;
+  border: 2px solid #efd3e6;
+  display: block;
+}
+.logo h1 {
+  color: #cd5196;
+  font-size: 2.2rem;
+  letter-spacing: 6px;
+  font-family: 'Trebuchet MS', Arial, sans-serif;
+}
+nav ul {
+  list-style-type: none;
+  display: flex;
+  gap: 24px;
+}
+nav li {
+  display: inline-block;
+}
+nav a {
+  text-decoration: none;
+  color: #ad4380;
+  font-size: 1.18rem;
+  font-weight: bold;
+  padding: 8px 18px;
+  border-radius: 8px;
+}
+nav a:hover {
+  background: #fce3ef;
+  color: #fff;
+}
+nav a:active {
+  background: #ffe9f6;
+  color: #d168b5;
+}
+
+.div-demo {
+  background: #fff0f8;
+  border: 2px dashed #b5396c;
+  margin: 20px auto;
+  max-width: 480px;
+  padding: 15px;
+  font-size: 1rem;
+  border-radius: 6px;
+  text-align: center;
+}
+.span-demo {
+  background: #f5e2ed;
+  color: #cd5196;
+  border-radius: 7px;
+  padding: 2px 12px;
+  font-size: 1rem;
+  display: inline;
+}
+.wellness-fieldset,
+.gratitude-section {
+  background: #fff7fa;
+  border: 2px solid #e6bad6;
+  border-radius: 16px;
+  padding: 22px;
+  width: 100%;
+  max-width: 400px;
+  margin: 20px auto 22px auto;
+}
+.wellness-fieldset legend,
+.gratitude-section h2 {
+  color: #b5396c;
+  font-family: 'Trebuchet MS', Arial, sans-serif;
+  font-size: 1.2rem;
+}
+.wellness-fieldset label,
+.gratitude-section label {
+  display: block;
+  margin: 8px 0 4px 0;
+}
+.wellness-fieldset input[type="text"],
+.wellness-fieldset input[type="number"],
+.wellness-fieldset input[type="date"],
+.wellness-fieldset select {
+  width: 100%;
+  padding: 8px;
+  margin: 4px 0 10px 0;
+  border-radius: 7px;
+  border: 1px solid #ccc;
+  background-color: #fbf6fc;
+  font-size: 1rem;
+}
+.gratitude-section input[type="text"] {
+  width: 96%;
+  padding: 8px;
+  margin: 5px 0;
+  border-radius: 7px;
+  border: 1px solid #ccc;
+  background-color: #fbf6fc;
+  font-size: 1rem;
+}
+.wellness-fieldset input[type="checkbox"],
+.wellness-fieldset input[type="radio"] {
+  margin-right: 5px;
+}
+button,
+.submit-btn,
+.gratitude-section button {
+  background: #c55a92;
+  color: #fff8fb;
+  border: none;
+  padding: 10px 22px;
+  border-radius: 10px;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 1rem;
+  margin-top: 10px;
+}
+button:hover,
+.submit-btn:hover,
+.gratitude-section button:hover {
+  background: #b34d8a;
+}
+button:active,
+.submit-btn:active,
+.gratitude-section button:active {
+  background: #fff6fa;
+  color: #cd5f92;
+}
+input[type="text"][data-flower] {
+  background-color: #fde7fd;
+  border: 2px solid #cd5196;
+}
+#stats {
+  background: #fff7fa;
+  border: 2px solid #e6bad6;
+  border-radius: 16px;
+  padding: 32px 18px;
+  max-width: 700px;
+  margin: 36px auto;
+  font-family: 'Trebuchet MS', Arial, sans-serif;
+}
+
+#stats h3 {
+  color: #b5396c;
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 1.3rem;
+  letter-spacing: 1px;
+}
+
+#stats table {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 7px;
+  background: #fbf6fc;
+  border-radius: 16px;
+  font-family: 'Trebuchet MS', Arial, sans-serif;
+}
+
+#stats caption {
+  caption-side: bottom;
+  font-weight: bold;
+  margin-top: 12px;
+  color: #b5396c;
+  font-size: 1.11rem;
+  letter-spacing: 1px;
+}
+
+#stats th,
+#stats td {
+  border: 1.2px solid #e6bad6;
+  padding: 13px;
+  border-radius: 8px;
+}
+
+#stats th {
+  background-color: #f7edf5;
+  color: #b5396c;
+  font-size: 1.08rem;
+  letter-spacing: 0.7px;
+}
+
+#stats td {
+  font-size: 1rem;
+  background: #fcf6fb;
+  color: #333;
+}
+
+#stats tbody tr:nth-child(even) {
+  background-color: #f9f2f8;
+}
+
+#stats tfoot td {
+  text-align: center;
+  font-style: italic;
+  padding: 14px;
+  background-color: #f6e9f1;
+  color: #b5396c;
+  border-top: 2px solid #e6bad6;
+  border-radius: 10px;
+}
+
+#journal {
+  background: #fff7fa;
+  padding: 34px 0 30px 0;
+}
+.gratitude-section {
+  margin: 0 auto 22px auto;
+  display: block;
+}
+ul,
+ol {
+  margin: 10px 30px;
+  line-height: 1.7;
+  color: #993a5e;
+  font-size: 1.07rem;
+}
+.grid-tips {
+  background: #fce3ef;
+  padding: 32px 0 30px 0;
+}
+.grid-tips h3 {
+  text-align: center;
+  color: #cd5196;
+  margin-bottom: 18px;
+  font-size: 1.15rem;
+  font-family: 'Trebuchet MS', Arial, sans-serif;
+}
+.tips-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+  gap: 20px;
+  max-width: 850px;
+  margin: auto;
+  padding-bottom: 15px;
+}
+.tip-box {
+  background: #fff0f8;
+  border: 2px solid #ffe2fa;
+  border-radius: 10px;
+  color: #ac5f81;
+  text-align: center;
+  font-size: 1rem;
+  margin: 0 6px;
+  padding: 17px 15px;
+  display: block;
+}
+.tip-box:hover {
+  background: #fde7fd;
+}
+footer {
+  background: linear-gradient(90deg, #e8b6d0 0%, #f6eadf 70%, #d3c7ff 100%);
+  color: #855964;
+  padding: 24px 0 14px 0;
+  font-family: 'Trebuchet MS', Arial, sans-serif;
+  font-size: 1rem;
+  text-align: center;
+  border-top: 2px solid #e2cbe5;
+  margin-top: 30px;
+}
+@media (max-width: 700px) {
+  header {
+    flex-direction: column;
+    gap: 12px;
+    padding: 13px 8px 10px 8px;
+  }
+  .logo {
+    justify-content: center;
+    flex-direction: column;
+  }
+  nav ul {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+  .wellness-fieldset,
+  .gratitude-section {
+    padding: 10px;
+    max-width: 98vw;
+  }
+  #stats,
+  .tracker-section {
+    padding: 12px 4px;
+    width: 96vw;
+    margin: 15px auto;
+  }
+  .tips-container {
+    grid-template-columns: 1fr;
+    gap: 12px;
+  }
+}
+@media (min-width: 900px) {
+  .tips-container {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+.submit-btn {
+  display: block;
+  margin: 18px auto 0 auto;
+}
+
+
+.wellness-fieldset,
+.wellness-fieldset label,
+.wellness-fieldset input,
+.wellness-fieldset select {
+  font-family: 'Trebuchet MS', Arial, sans-serif;
+}

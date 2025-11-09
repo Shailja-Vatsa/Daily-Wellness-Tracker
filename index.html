@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+  <title>Bloom | Daily Wellness Tracker</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    nav a:hover {
+      color: thistle;
+    }
+  </style>
+</head>
+
+
+<body>
+  <header id="main-header">
+    <div class="logo">
+      <img src="Untitled design.png" alt="Bloom Logo" width="80" height="80">
+      <h1>Bloom</h1>
+    </div>
+    <nav>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#tracker">Tracker</a></li>
+        <li><a href="#journal">Journal</a></li>
+        <li><a href="#stats">Stats</a></li>
+        <li><a href="#about">About</a></li>
+      </ul>
+    </nav>
+  </header>
+
+
+
+
+
+
+  <main id="tracker">
+    <section class="tracker-section">
+
+
+        <fieldset class="wellness-fieldset">
+  <legend>Daily Wellness Details</legend>
+
+
+  <label for="date">Date:</label>
+  <input type="date" id="date" name="log-date" required>
+
+
+  <label for="sleep">Hours of Sleep:</label>
+  <input type="number" id="sleep" name="sleep-hours" min="0" max="24" value="8">
+
+
+  <p>Hydration Check:</p>
+  <label><input type="checkbox" name="hydration" value="8-glasses">Less than 8 glasses</label>
+  <label><input type="checkbox" name="hydration" value="8-glasses">8 glasses</label>
+  <label><input type="checkbox" name="hydration" value="more-than-8">More than 8</label>
+
+
+  <p>How do you feel today?</p>
+  <label><input type="radio" name="mood" value="happy">Happy</label>
+  <label><input type="radio" name="mood" value="normal">Neutral</label>
+  <label><input type="radio" name="mood" value="tired">Tired</label>
+
+
+  <label for="activity">Main Activity:</label>
+  <select id="activity" name="activity-type">
+    <option value="meditation">Meditation</option>
+    <option value="workout">Workout</option>
+    <option value="reading">Reading</option>
+    <option value="social">Socializing</option>
+  </select>
+</fieldset>
+        <input type="submit" value="Log Today" class="submit-btn">
+      </form>
+    </section>
+  </main>
+
+
+  <section id="stats">
+    <h3>Weekly Progress Summary</h3>
+    <table>
+      <caption>Summary of Daily Wellness Activities</caption>
+      <thead>
+        <tr>
+          <th rowspan="2">Day</th>
+          <th colspan="2">Sleep (hrs)</th>
+          <th rowspan="2">Mood</th>
+          <th rowspan="2">Hydration</th>
+        </tr>
+        <tr>
+          <th>Goal</th>
+          <th>Actual</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Monday</td>
+          <td>8</td>
+          <td>7</td>
+          <td>Neutral</td>
+          <td>6 glasses</td>
+        </tr>
+        <tr>
+          <td>Tuesday</td>
+          <td>8</td>
+          <td>8</td>
+          <td>Happy</td>
+          <td>8 glasses</td>
+        </tr>
+        <tr>
+          <td>Wednesday</td>
+          <td>8</td>
+          <td>6</td>
+          <td>Tired</td>
+          <td>5 glasses</td>
+        </tr>
+        <tr>
+          <td>Thursday</td>
+          <td>8</td>
+          <td>8</td>
+          <td>Happy</td>
+          <td>9 glasses</td>
+        </tr>
+        <tr>
+          <td>Friday</td>
+          <td>8</td>
+          <td>7</td>
+          <td>Neutral</td>
+          <td>7 glasses</td>
+        </tr>
+      </tbody>
+      <tfoot>
+        <tr>
+          <td colspan="5">Consistent progress observed with improved hydration mid-week.</td>
+        </tr>
+      </tfoot>
+    </table>
+  </section>
+
+
+  <section id="journal">
+   <div class="gratitude-section">
+  <h2>Gratitude Journal</h2>
+  <p>Write 3 things you are grateful for today:</p>
+  <ol>
+    <li><input type="text" placeholder="Gratitude 1"></li>
+    <li><input type="text" placeholder="Gratitude 2"></li>
+    <li><input type="text" placeholder="Gratitude 3"></li>
+  </ol>
+  <button>Save</button>
+</div>
+  </section>
+
+
+  <section class="grid-tips">
+    <h3>Wellness Tips & Quotes</h3>
+    <div class="tips-container">
+      <div class="tip-box">Breathe deeply and stay present.</div>
+      <div class="tip-box">Gratitude turns routine into joy.</div>
+      <div class="tip-box">Move your body, calm your mind.</div>
+      <div class="tip-box">Rest is productive too.</div>
+    </div>
+  </section>
+
+
+  <footer>
+    <a href="https://pin.it/5jwxjXvCZ" style="color: #855964; text-decoration: none;">Pinterest</a>
+
+
+    <p> Bloom Wellness Tracker </p>
+  </footer>
+
+
+</body>
+</html>
